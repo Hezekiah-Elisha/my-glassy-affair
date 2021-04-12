@@ -1,0 +1,68 @@
+body{
+  background-image: linear-gradient(to right,#5099af,#62a3b7);
+}
+
+.container{
+  width: 100%;
+}
+
+.navtop{
+  background-color: #85b7c7;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+
+}
+.nav-brand{
+  color: #ffc;
+}
+.link ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+
+}
+.link ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+li{
+  float: left;
+  padding: 20px;
+}
+.navtop li:last-child{
+  float: right;
+  flex: auto;
+}
+li:hover{
+  background-color: #5099af;
+  transition: 0.6s;
+}
+p{
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  20%{
+    background-color: #34d;
+  }
+
+  75%{
+    background-color: #ccc;
+  }
+
+  80%{
+    color: red;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
